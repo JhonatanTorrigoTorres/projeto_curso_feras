@@ -1,0 +1,179 @@
+body{
+    margin: 0
+}
+.logo{
+    height: 85px;
+    background-color: rgb(248, 0, 50);
+}
+.logotipo{
+    margin-top: 26px ;
+    margin-left: 150px;  
+    height: 32px;  
+}
+.cabecalho{
+    padding-top: 56px;
+    padding-bottom: 26px;
+    text-align: center;
+    font-family: Arial;
+}
+h2{
+    margin-bottom: 10px;
+    height: 41px;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(102, 102, 102);
+}
+.veja{
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: rgb(102, 102, 102);
+}
+.asterisco_campos{
+    margin-right: 2px;
+    font-size: 16px;
+    color: rgb(252, 13, 27);
+}
+.asterisco{
+    margin-right: 2px;
+    position: relative;
+    font-size: 16px;
+    color: rgb(252, 13, 27);
+}
+.campos{
+    font-size: 12px;
+    color: rgb(51, 51, 51);
+}
+form{
+    font-family: Arial;
+    margin-left: 750px;
+}
+label{
+    position:relative;
+    font-size: 1rem;
+    color: rgb(102, 102, 102);
+}
+.nome_completo{
+    margin-top: 8px;
+    position: relative;
+    padding: 1px 16px;
+    height: 48px;
+    width: 380px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(153, 153, 153);
+}
+.legenda{
+    margin-top: 4px;
+    position: relative;
+    font-size: 0.875rem;
+    color: rgb(153, 153, 153);
+}
+.genero{
+    margin-left: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-family: Arial;
+}
+.nascimento{
+    margin-top: 8px;
+    position: relative;
+    padding: 1px 16px;
+    height: 48px;
+    width: 70px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(153, 153, 153);
+}
+.cpf{
+    margin-top: 8px;
+    position: relative;
+    padding: 1px 16px;
+    height: 48px;
+    width: 110px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(153, 153, 153);
+}
+#abrirmodal{
+    margin-top: 16px;
+    font-size: 16px;   
+}
+.telefone{
+    margin-top: 8px;
+    position: relative;
+    padding: 1px 16px;
+    height: 48px;
+    width: 110px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(153, 153, 153);
+}
+.checkbox{
+    max-width: 370px;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(102, 102, 102);
+}
+.email{
+    margin-top: 8px;
+    position: relative;
+    padding: 1px 16px;
+    height: 48px;
+    width: 380px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(153, 153, 153);
+}
+.senha{
+    margin-top: 8px;
+    position: relative;
+    padding: 1px 16px;
+    height: 48px;
+    width: 230px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(153, 153, 153);
+}
+.barra{
+    position: relative;
+    width: 208px;
+    height: 4px;
+    background-color: rgb(221, 221, 221);
+}
+.botao{
+    margin-top: 20px;
+    margin-bottom: 16px;
+    margin-left: 110px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 100%;
+    width: 234px;
+    height: 48px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(248, 0, 50);
+    border-image: initial;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 0, 50);
+}
+.politica{
+    font-size: 16px;
+    line-height: 18px;
+    color: rgb(102, 102, 102);
+    max-width: 473px;
+    text-align: center;
+}
+.login{
+    font-size: 16px;
+    line-height: 18px;
+    color: rgb(102, 102, 102);
+    max-width: 473px;
+    text-align: center;
+}

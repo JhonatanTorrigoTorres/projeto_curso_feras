@@ -1,155 +1,145 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Tela de cadastro</title>
-        </head>
-        <body>
-            <div class="logo">
-                <a href="https://www.americanas.com.br/"> <img src="./img/logo_americanas.png" alt="logotipo"></a>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/cadastro.css">
+        <title>Tela de cadastro</title>
+    </head>
+    <body>
+        <div class="logo">
+            <a href="https://www.americanas.com.br/"> <img src="./img/logo_americanas.png" class="logotipo" alt="logotipo"></a>
+        </div>
+        <!--Textos após a logomarca da página-->
+        <section class="cabecalho">
+            <h2>criar seu cadastro</h2>
+            <p class="veja">
+                veja seus pedidos de forma fácil, compre mais rápido e tenha uma <br> experiência personalizada :)
+            </p>    
+            <p class="campos">
+                <span class="asterisco_campos">*</span>
+                    campos obrigatórios
+            </p>
+        </section>
+        <!--Formulário-->
+        <form method="post">
+            <!--Nome completo-->
+            <div>
+                <span class="asterisco">*</span>
+                <label>nome completo</label>
+                <br>
+                <input type="text" name="nome" class="nome_completo" />
             </div>
-            <!--Textos após a logomarca da página-->
-            <section>
-                <h2 class="criar">criar seu cadastro</h2>
-                <p class="veja">
-                    veja seus pedidos de forma fácil, compre mais rápido e tenha uma <br> experiência personalizada :)
-                </p>    
-                <p class="campos">
-                    <span class="asterisco">*</span>
-                        campos obrigatórios
-                </p>
-            </section>
-            <!--Formulário-->
-            <form method="post">
-                <section>
-                    <!--Nome completo-->
-                    <label>
-                        <span class="asterisco_mais_texto">*</span>
-                            nome completo
-                        <div class="caixa nome">
-                            <input type="text" name="nome" class="nome_completo" />
-                        </div>
-                    </label>
-                    <br>
-                    <!--Gênero-->
-                    <label>
-                        <span class="asterisco_mais_texto">*</span>
-                            gênero 
-                        <br>
-                        <span class="legenda">pra gente te conhecer um pouquinho melhor :)</span> 
-                        <br>
-                        <input type="radio" name="genero" class="genero" /> feminino
-                        <input type="radio" name="genero" class="genero" /> masculino
-                        <input type="radio" name="genero" class="genero" /> não informar
-                    </label> 
-                    <br>
-                    <br>
-                    <!--Nascimento-->
-                        <label>
-                            <span class="asterisco_mais_texto">*</span>
-                                data de nascimento 
-                            <br>
-                            <span class="legenda">necessário pra identificar a maioridade, no formato DD/MM/AAAA</span> 
-                            <br>
-                            <input type="text" name="nascimento" class="nascimento" placeholder="__/__/____" />   
-                        </label>
-                        <br> 
-                        <br>
-                    <!--CPF-->
-                        <label>
-                            <span class="asterisco_mais_texto">*</span>
-                                CPF 
-                            <br>
-                            <span class="legenda">necessário pra emissão das Notas Fiscais</span>
-                            <br>
-                            <input type="text" name="cpf" class="cpf" placeholder="___.___.___-__" />
-                        </label> 
-                        <br> 
-                        <br>
-                        <div>
-                            <a href="#abrirmodal">é pessoa jurídica? conheça a americanas empresas</a>
-                        </div>
-                        <div id="abrirModal" class="modal">
-                        </div>
-                        <br>
-                        <!--Telefone e Celular-->                   
-                        <label>
-                            <span class="asterisco_mais_texto">*</span>
-                                telefone 
-                            <br>
-                            <span class="legenda">caso a gente precise entrar em contato sobre seus pedidos</span> 
-                            <br>
-                            <input type="tel" name="telefone"  class="telefone" placeholder="(__)_____-____" />
-                        </label>
-                        <br>
-                        <br>
-                        <div class="whatsapp">
-                            <input type="checkbox" name="mensagem_whatsapp" class="checkbox" />
-                            <span>receber notificações por whatsapp</span>
-                        </div>
-                        <br> 
-                        <label>
-                            <span class="asterisco_mais_texto">*</span>
-                                celular 
-                            <br>
-                            <span class="legenda">caso a gente precise entrar em contato sobre seus pedidos</span> 
-                            <br>
-                            <input type="tel" name="celular"  class="telefone" placeholder="(__)_____-____" /> 
-                        </label>
-                        <br>
-                        <br>
-                        <!--Email-->
-                        <label>
-                            <span class="asterisco_mais_texto">*</span>
-                                e-mail 
-                            <br>
-                            <input type="text" name="email" class="email" /> 
-                        </label>
-                        <br> 
-                        <br>
-                        <input type="checkbox" name="emails_promocionais" class="checkbox" />
-                        <label>receber e-mails promocionais</label>
-                        <br>
-                        <br>
-                        <!--Senha-->
-                        <label>                 
-                            <span class="asterisco_mais_texto">*</span>
-                                senha 
-                            <br>
-                            <span class="legenda">precisa ter entre 6 e 20 caracteres</span> 
-                            <br>
-                            <input type="password" name="senha" class="senha" />
-                        </label>       
-                        <br>
-                        <br>
-                        <div class="barra">
-                            <span class="senha">fraca</span>
-                            <img src="./img/icone_exclamacao.png" alt="icone" height="20" width="20">
-                        </div>
-                        <br> 
-                        <!--Compartilhar dados-->
-                        <input type="checkbox" name="compartilhar_dados" class="checkbox" />
-                            <label>  
-                                compartilhar meus dados com parceiros para ter<br>conteúdos personalizados, veja <a href="https://www.americanas.com.br//hotsite/politica-de-privacidade" target="_blank">
-                                como funciona.</a>
-                            </label> 
-                        <br> 
-                        <br>
-                        <!--Botão-->
-                        <div class="botão">
-                            <button type="button">criar seu cadastro</button>
-                        </div>
-                        <br> 
-                        <!--Termo de Responsabilidade-->
-                        <p>
-                            Não se preocupe, nosso site é seguro! Ao criar o seu cadastro,<br> 
-                            você concorda com a nossa <a href="https://www.americanas.com.br/hotsite/politica-de-privacidade">Política de Privacidade</a>
-                        </p>
-                        <!--Página de Login-->
-                            <p>já tem cadastro? <a href="./entrar.html">entrar</a></p>   
-                </section>        
-            </form>              
-        </body>
-    </html>     
+            <br>
+            <!--Gênero-->
+            <div>
+                <span class="asterisco">*</span>
+                <label>gênero</label> 
+                <br>
+                <span class="legenda">pra gente te conhecer um pouquinho melhor :)</span> 
+                <br>
+                <input type="radio" name="genero" class="genero" /> <label style="color:rgb(102, 102, 102);">feminino</label>
+                <input type="radio" name="genero" class="genero" /> <label style="color:rgb(102, 102, 102);">masculino</label>
+                <input type="radio" name="genero" class="genero" /> <label style="color:rgb(102, 102, 102);">não informar</label>
+            </div>
+            <br>
+            <br>
+            <!--Nascimento-->
+            <div>
+                <span class="asterisco">*</span>
+                <label>data de nascimento</label>
+                <br>
+                <span class="legenda">necessário pra identificar a maioridade, no formato DD/MM/AAAA</span> 
+                <br>
+                <input type="text" name="nascimento" class="nascimento" placeholder="__/__/____" />   
+            </div>
+            <br> 
+            <br>
+            <!--CPF-->
+            <div>
+                <span class="asterisco">*</span>
+                <label>CPF</label>
+                <br>
+                <span class="legenda">necessário pra emissão das Notas Fiscais</span>
+                <br>
+                <input type="text" name="cpf" class="cpf" placeholder="___.___.___-__" />
+            </div>
+            <br>
+            <div>
+                <a href="#abrirmodal" style="color: rgb(102, 102, 102);">é pessoa jurídica? conheça a americanas empresas</a>
+            </div>
+            <div id="abrirmodal" class="modal">
+            </div>
+            <br>
+            <!--Telefone e Celular-->                   
+            <div>
+                <span class="asterisco">*</span>
+                <label>telefone</label>
+                <br>
+                <span class="legenda">caso a gente precise entrar em contato sobre seus pedidos</span> 
+                <br>
+                <input type="tel" name="telefone"  class="telefone" placeholder="(__)_____-____" />
+            </div>
+            <br>
+            <div class="checkbox">
+                <input type="checkbox" name="mensagem_whatsapp" />
+                <span>receber notificações por whatsapp</span>
+            </div>
+            <br>
+            <br>
+            <div>
+                <span class="asterisco">*</span>
+                <label>celular</label>
+                <br>
+                <span class="legenda">caso a gente precise entrar em contato sobre seus pedidos</span> 
+                <br>
+                <input type="tel" name="celular"  class="telefone" placeholder="(__)_____-____" /> 
+            </div>
+            <br>
+            <!--Email-->
+            <div>
+                <span class="asterisco">*</span>
+                <label>e-mail</label>
+                <br>
+                <input type="text" name="email" class="email" /> 
+            </div>
+            <br> 
+            <input type="checkbox" name="emails_promocionais" class="checkbox" />
+            <label>receber e-mails promocionais</label>
+            <br>
+            <br>
+            <br>
+            <!--Senha-->
+            <div>                 
+                <span class="asterisco">*</span>
+                <label>senha</label> 
+                <br>
+                <span class="legenda">precisa ter entre 6 e 20 caracteres</span> 
+                <br>
+                <input type="password" name="senha" class="senha" />
+            </div>       
+            <br>
+            <br>
+            <div class="barra"></div>
+            <br>
+            <!--Compartilhar dados-->
+            <input type="checkbox" name="compartilhar_dados" class="checkbox" />
+                <label>  
+                    compartilhar meus dados com parceiros para ter<br>conteúdos personalizados, veja <a href="./politica.html" target="_blank" style="color: rgb(102, 102, 102);">
+                    como funciona.</a>
+                </label> 
+            <br> 
+            <br>
+            <!--Botão-->
+            <button type="button" class="botao">criar seu cadastro</button>
+            <!--Termo de Responsabilidade-->
+            <p class="politica">
+                Não se preocupe, nosso site é seguro! Ao criar o seu cadastro,<br> 
+                você concorda com a nossa <a href="./politica.html" style="color: #666666;"><b>Política de Privacidade</b></a>
+            </p>
+            <!--Página de Login-->
+            <p class="login">já tem cadastro? <a href="./entrar.html" style="color: #666666;"><b>entrar</b></a></p>           
+        </form>              
+    </body>
+</html>     

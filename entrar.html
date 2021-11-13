@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Tela de Login</title>
-        </head>
-        <body>
-            <div class="logo">
-                <a href="https://www.americanas.com.br/"> <img src="./img/logo_americanas.png" alt="logotipo"></a>
-            </div>
-            <h2>    
-                <img src="./img/icone_boneco.png" alt="icone" width="20" height="20">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/entrar.css">
+        <title>Tela de Login</title>
+    </head>
+    <body>
+        <div class="logo">
+            <a href="https://www.americanas.com.br/"> <img src="./img/logo_americanas.png" class="logotipo" alt="logotipo"></a>
+        </div>
+        <h2>    
+            <img src="./img/icone_boneco.png" alt="icone" width="25" height="25">
                 login do cliente
-            </h2>
-            <form method="post">
-                <section>
-                    <!--Caixa de E-mail-->
-                    <label>e-mail:</label>
-                    <div class="caixa_email">
-                        <input type="text" name="email" class="email" placeholder="Ex.joaodasilva@gmail.com" />
-                    </div>
-                    <br>
-                    <br>
-                    <!--Caixa de senha-->
-                    <label>senha na americanas.com:</label>
-                    <span class="modal"><a href="#abrirmodal">esqueceu?</a></span>
-                    <div id="abrirModal" class="modal">
-                    </div>
-                    <input type="password" name="senha" class="senha" />
-                    <br>
-                    <br>
-                    <!--Botão-->
-                    <div class="botão">
-                        <button type="button">continuar</button>
-                    </div>
-                    <p>não tem cadastro? <a href="./cadastro.html">cadastre-se</a></p>
-                    <p>Ao continuar com o acesso, você concorda com a nossa <a href="https://www.americanas.com.br/hotsite/politica-de-privacidade"><br>
-                        política de privacidade</a></p>     
-                </section>
-            </form>
-        </body>
-    </html>
+        </h2>
+        <form method="post">
+            <section>
+                <!--Caixa de E-mail-->
+                <label class="email">e-mail:</label><br>
+                <input type="text" name="email" class="caixa" placeholder="Ex.joaodasilva@gmail.com" />
+                <br>
+                <br>
+                <!--Caixa de senha-->
+                <label>senha na americanas.com:</label>
+                <span><a href="#abrirmodal" class="modal">esqueceu?</a></span>
+                <div id="abrirModal">
+                </div>
+                <input type="password" name="senha" class="caixa" />
+                <br>
+                <br>
+                <br>
+                <!--Botão-->
+                <div>
+                    <button type="button" class="botao">continuar</button>
+                </div>
+                <br>
+                <br>
+                <p>não tem cadastro? <a href="./cadastro.html" style="color: #666;">cadastre-se</a></p>
+                <p>Ao continuar com o acesso, você concorda com a nossa <a href="./politica.html" style="color: #666;"><br>
+                    política de privacidade</a></p>     
+            </section>
+        </form>
+    </body>
+</html>
